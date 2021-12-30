@@ -1,24 +1,25 @@
 import Head from "next/head";
 import { useState } from "react";
+import Link from 'next/link'
 
 function MobileUrl(props) {
     return (
-        <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=mobile&hl=de`} target="_blank" rel="noreferrer"><ion-icon name="phone-portrait-outline"></ion-icon> <div className="ml-2">Mobile Check</div></a>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=mobile&hl=de`} target="_blank" rel="noreferrer"><ion-icon name="phone-portrait-outline"></ion-icon> <div className="ml-2">Mobile Check</div></Link>
     )
 }
 function DesktopUrl(props) {
     return (
-        <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=desktop&hl=de`} target="_blank" rel="noreferrer"><ion-icon name="desktop-outline"></ion-icon> <div className="ml-2">Desktop Check</div></a>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=desktop&hl=de`} target="_blank" rel="noreferrer"><ion-icon name="desktop-outline"></ion-icon> <div className="ml-2">Desktop Check</div></Link>
     )
 }
 function DMARCCheck(props) {
     return (
-        <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/dmarc-inspector/?domain=${props.url}`} target="_blank" rel="noreferrer"><ion-icon name="link-outline"></ion-icon> <div className="ml-2">DMARC Check</div></a>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/dmarc-inspector/?domain=${props.url}`} target="_blank" rel="noreferrer"><ion-icon name="link-outline"></ion-icon> <div className="ml-2">DMARC Check</div></Link>
     )
 }
 function SPFCheck(props) {
     return (
-        <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/spf-survey/?domain=${props.url}`} target="_blank" rel="noreferrer"><ion-icon name="link-outline"></ion-icon> <div className="ml-2">SPF Check</div></a>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/spf-survey/?domain=${props.url}`} target="_blank" rel="noreferrer"><ion-icon name="link-outline"></ion-icon> <div className="ml-2">SPF Check</div></Link>
     )
 }
 
