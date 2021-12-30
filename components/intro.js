@@ -59,7 +59,7 @@ export default function Intro() {
                 <div className="px-6 py-3 bg-gray-100 rounded-full text-gray-600 mb-3 mr-3">WooCommerce</div>
             </div>
             <div className="pointer-events-auto mb-12 px-4">
-                <a className="font-bold block border border-2 border-werk text-werk px-6 py-4 rounded-full hover:bg-werk hover:text-white hover:shadow-2xl" href="/about">Entdecken Sie Werkkasten</a>
+                <Link className="font-bold block border border-2 border-werk text-werk px-6 py-4 rounded-full hover:bg-werk hover:text-white hover:shadow-2xl" href="/about">Entdecken Sie Werkkasten</Link>
             </div>
 
             <div className="flex flex-wrap flex-col lg:flex-row">
