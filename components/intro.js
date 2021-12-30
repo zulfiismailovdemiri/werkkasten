@@ -4,22 +4,30 @@ import Link from 'next/link'
 
 function MobileUrl(props) {
     return (
-        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=mobile&hl=de`} target="_blank" rel="noreferrer">Mobile Check</Link>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=mobile&hl=de`} target="_blank" rel="noreferrer">
+            <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" target="_blank" rel="noreferrer">Mobile Check</a>
+        </Link>
     )
 }
 function DesktopUrl(props) {
     return (
-        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=desktop&hl=de`} target="_blank" rel="noreferrer">Desktop Check</Link>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.${props.url}%2F&utm_source=search_console&tab=desktop&hl=de`} target="_blank" rel="noreferrer">
+            <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" target="_blank" rel="noreferrer">Desktop Check</a>
+        </Link>
     )
 }
 function DMARCCheck(props) {
     return (
-        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/dmarc-inspector/?domain=${props.url}`} target="_blank" rel="noreferrer">DMARC Check</Link>
+        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`https://dmarcian.com/dmarc-inspector/?domain=${props.url}`} target="_blank" rel="noreferrer">
+            <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" target="_blank" rel="noreferrer">DMARC Check</a>
+        </Link>
     )
 }
 function SPFCheck(props) {
     return (
-        <Link className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" href={`//dmarcian.com/spf-survey/?domain=${props.url}`} target="_blank" rel="noreferrer">SPF Check</Link>
+        <Link href={`https://dmarcian.com/spf-survey/?domain=${props.url}`}>
+            <a className="font-bold text-sm block p-4 bg-werk rounded-md text-white flex items-center" target="_blank" rel="noreferrer">SPF Check</a>
+        </Link>
     )
 }
 
