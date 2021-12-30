@@ -43,7 +43,7 @@ export default function Intro() {
             </div>
 
             <div className="text-2xl lg:text-4xl text-gray-800 text-center w-full lg:w-6/12 mb-8 px-4">
-                Wir sind eine digitale Werbeagentur und lieben es Webseiten aus "stürmischen" Zustände wieder in sicheren "Hafen" anzudocken. Sie haben Fragen? Wir freuen uns auf Sie.
+                Wir sind eine digitale Werbeagentur und lieben es Webseiten aus stürmischen Zustände wieder in sicheren Hafen anzudocken. Sie haben Fragen? Wir freuen uns auf Sie.
             </div>
             <div className="mb-8 text-gray-800 text-lg lg:text-2xl text-center w-full lg:w-6/12 mb-12 px-4">
                 Egal, mit welcher CMS oder Shop-System Sie Ihre Webseite betreiben, <span className="text-werk">werkkasten</span> hat eine Lösung für Sie.
