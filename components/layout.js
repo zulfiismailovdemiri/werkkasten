@@ -2,7 +2,6 @@ import Footer from '../components/footer'
 import Meta from '../components/meta'
 import Header from "./header";
 import Script from "next/script";
-
 export default function Layout({ children }) {
     return (
         <>
