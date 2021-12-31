@@ -20,7 +20,7 @@ export default function Header() {
 
                     </Link>
                 </div>
-                <ul className="flex ml-auto font-mono">
+                <ul className="flex flex-wrap ml-auto font-mono">
                     <li className="mr-4">
                         <Link href="/what-we-do">
                             <a className={router.pathname === "/what-we-do" ? "text-werk" : ""}>[ Was wir machen ]</a>
@@ -29,6 +29,16 @@ export default function Header() {
                     <li className="mr-4">
                         <Link href="/about">
                             <a className={router.pathname === "/about" ? "text-werk" : ""}>[ Über uns ]</a>
+                        </Link>
+                    </li>
+                    <li className="mr-4">
+                        <Link href="/werk">
+                            <a className={router.pathname === "/werk" ? "text-werk" : ""}>[ Werk ]</a>
+                        </Link>
+                    </li>
+                    <li className="mr-4">
+                        <Link href="/impressum">
+                            <a className={router.pathname === "/impressum" ? "text-werk" : ""}>[ Impressum ]</a>
                         </Link>
                     </li>
                 </ul>

@@ -7,8 +7,8 @@ export default function Layout({ children }) {
     return (
         <>
 
-            <Script src="https://www.googletagmanager.com/gtag/js?id=G-1C0BWC07BB" strategy="afterInteractive" />
-            <Script id="google-analytics" strategy="afterInteractive">
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-1C0BWC07BB" strategy="beforeInteractive" />
+            <Script id="google-analytics" strategy="beforeInteractive">
                 {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments)}
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
                 `}
             </Script>
 
-            <Script strategy="afterInteractive">
+            <Script strategy="beforeInteractive">
                 {`
                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -29,15 +29,15 @@ export default function Layout({ children }) {
                 }
             </Script>
 
-            <Script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false" />
 
             <Meta />
             <Header/>
-            <div className="w-full min-h-screen">
+            <div className="w-full">
                 <main>{children}</main>
             </div>
             <Footer />
 
+            <Script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" strategy="beforeInteractive" data-cfasync="false" />
 
             <Script strategy="afterInteractive">
                 {`

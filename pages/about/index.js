@@ -20,9 +20,11 @@ export default function About(props) {
                     }}>
                         <Image
                             src={PromotionAbout}
+                            alt="Arbeiten an Projekt in Team"
                             layout="fill"
                             objectPosition="top"
                             objectFit="cover"
+                            priority
                         />
                         <div className="flex w-full lg:w-8/12 mx-auto items-center z-20">
                             <div className="w-full lg:w-2/3 font-bold text-white text-5xl lg:text-6xl drop-shadow-md">Da weitermachen wo andere aufgehört haben gut zu machen.</div>

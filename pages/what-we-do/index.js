@@ -10,7 +10,7 @@ export default function WhatWeDo(props) {
         <>
             <Layout>
                 <Head>
-                    <title>Test</title>
+                    <title>werkkasten | Was machen wir</title>
                 </Head>
                 <Container>
                     <div className="promotion relative overflow-hidden flex w-full bg-gray-100 px-8 after:absolute before:content-[''] after:bg-werk after:top-0 after:left-0 after:w-full after:h-full after:bg-opacity-75" style={{
@@ -19,9 +19,11 @@ export default function WhatWeDo(props) {
                     }}>
                         <Image
                             src={PromotionWhatWeDo}
+                            alt="Kreative Hintergrundbild"
                             layout="fill"
                             objectPosition="top"
                             objectFit="cover"
+                            priority
                         />
                         <div className="flex w-full lg:w-8/12 mx-auto items-center z-20">
                             <div className="w-full lg:w-2/3 font-bold text-white text-5xl lg:text-6xl drop-shadow-md">Wir kombinieren das Design mit Technologie um komplexe Probleme zu lösen. Nicht mehr, nicht weniger.</div>
