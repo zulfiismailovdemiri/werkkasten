@@ -1,14 +1,12 @@
 import Head from 'next/head'
 
-import Favicon from '../public/favicon.svg'
-
 export default function Meta() {
     return (
         <Head>
             <link
                 rel="icon"
                 type="image/svg+xml"
-                href={Favicon}
+                href="favicon.svg"
             />
             <link
                 rel="stylesheet"
