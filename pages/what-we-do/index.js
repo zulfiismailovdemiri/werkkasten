@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Layout from "../../components/layout";
 import Container from "../../components/container";
-import PromotionWhatWeDo from '../../public/whatwedo.jpg'
+import PromotionWhatWeDo from '/public/whatwedo.jpg'
 
 export default function WhatWeDo(props) {
     return (

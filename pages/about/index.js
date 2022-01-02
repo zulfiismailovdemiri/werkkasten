@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Layout from "../../components/layout"
 import Container from "../../components/container"
 
-import PromotionAbout from '../../public/promotionAbout.jpg'
+import PromotionAbout from '/public/promotionAbout.jpg'
 
 export default function About(props) {
     return (

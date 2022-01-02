@@ -5,9 +5,9 @@ import Image from 'next/image'
 import Layout from "../../components/layout"
 import Container from "../../components/container"
 
-import PromotionWerk from '../../public/promotionWerkBW-01.jpg'
-import promotionAvidon from '../../public/avidon-01.jpg'
-import promotionFuss from '../../public/fuss-kompetenz.jpg'
+import PromotionWerk from '/public/promotionWerkBW-01.jpg'
+import promotionAvidon from '/public/avidon-01.jpg'
+import promotionFuss from '/public/fuss-kompetenz.jpg'
 
 export default function Werk(props) {
     return (
